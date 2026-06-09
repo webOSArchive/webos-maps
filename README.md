@@ -1,5 +1,7 @@
 # webOS Maps Revival
 
+![Maps Icon](com.palm.app.maps/icon.png)
+
 Maps on legacy webOS have been broken since Bing Maps APIs were retired. This repo contains three codebases plus the new proxy:
 
 - **com.palm.app.maps** — original HP/Palm maps app (Enyo 0.10 framework), patched to point at `bing-proxy`
