@@ -1,0 +1,11 @@
+Options -Indexes
+
+RewriteEngine On
+
+# Route Bing Maps SDK request to our shim server
+RewriteRule ^mapcontrol\.ashx$ mapcontrol.php [L,QSA]
+
+# Route Bing REST API calls to our translation proxies
+RewriteRule ^REST/v1/Locations.*$ api/locations.php [L,QSA]
+RewriteRule ^REST/v1/Routes.*$    api/routes.php    [L,QSA]
+RewriteRule ^json\.aspx$          api/places.php    [L,QSA]
