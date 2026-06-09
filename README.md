@@ -2,7 +2,7 @@
 
 ![Maps Icon](com.palm.app.maps/icon.png)
 
-Maps on legacy webOS have been broken since Bing Maps APIs were retired. This repo contains three codebases plus the new proxy:
+Maps on legacy webOS have been broken since Bing Maps APIs were retired. This repo contains two codebases:
 
 - **com.palm.app.maps** — original HP/Palm maps app (Enyo 0.10 framework), patched to point at `bing-proxy`
 - **bing-proxy** — server-side shim that impersonates Bing Maps endpoints; uses Leaflet + OSM + Nominatim + OSRM
